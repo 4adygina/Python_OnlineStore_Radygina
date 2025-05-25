@@ -61,4 +61,6 @@ class Orders(models.Model):
   basket_id = models.ForeignKey('Basket', on_delete=models.PROTECT)
 
 class Stock_balance(models.Model):
-  ...
+  good = models.OneToOneField(Goods, verbose_name='Товар', on_delete=models.CASCADE)
+  count = models.IntegerField(verbose_name='Количество')
+  
