@@ -4,4 +4,4 @@ class Command(BaseCommand):
   help = 'Загрузка продуктов'    
   def handle(self, *args, **options):        
     import os        
-    os.system('python3.11 manage.py loaddata data.json')
+    os.system('python3.11 manage.py loaddata busket.json')
